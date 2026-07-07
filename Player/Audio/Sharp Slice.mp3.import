@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c42afp4ywmibj"
+path="res://.godot/imported/Sharp Slice.mp3-ff0b8297f28f03508f0e39c860ba1d46.mp3str"
+
+[deps]
+
+source_file="res://Player/Audio/Sharp Slice.mp3"
+dest_files=["res://.godot/imported/Sharp Slice.mp3-ff0b8297f28f03508f0e39c860ba1d46.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
