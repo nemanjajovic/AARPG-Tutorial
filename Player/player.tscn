@@ -11,6 +11,7 @@
 [ext_resource type="AudioStream" uid="uid://c42afp4ywmibj" path="res://Player/Audio/Sharp Slice.mp3" id="9_00tjw"]
 [ext_resource type="Script" uid="uid://fl6124eiw5gv" path="res://Player/Scripts/player_interactions_host.gd" id="10_apopc"]
 [ext_resource type="PackedScene" uid="uid://bgsbrvs61i10y" path="res://GeneralNodes/Hurtbox/hurt_box.tscn" id="10_x3vf3"]
+[ext_resource type="Script" uid="uid://b2qk1rsfta4kk" path="res://Player/Scripts/player_camera.gd" id="11_5htga"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_bso3f"]
 radius = 10.049875
@@ -536,8 +537,14 @@ script = ExtResource("6_fhl08")
 attack_sound = ExtResource("9_00tjw")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=667081479]
+limit_left = -500
+limit_top = -300
+limit_right = 500
+limit_bottom = 300
 position_smoothing_enabled = true
 position_smoothing_speed = 2.0
+editor_draw_limits = true
+script = ExtResource("11_5htga")
 
 [node name="Audio" type="Node2D" parent="." unique_id=1230689089]
 
